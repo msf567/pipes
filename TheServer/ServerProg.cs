@@ -18,14 +18,15 @@ namespace Finger
                 firstProc.EnableRaisingEvents = true;
                 Console.WriteLine("Looking for " + firstProc.StartInfo.FileName);
 
-                for (int x = 0; x < 5; x++)
-                    firstProc.Start();
+                for (int x = 0; x < 5; x ++)
+                firstProc.Start();
 
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-
+                Console.WriteLine("Looking for " + firstProc.StartInfo.FileName);
+                Console.WriteLine(ex.Message + " " + firstProc.StartInfo.FileName);
+                
             }
 
             Console.WriteLine("Welcome to my Hot Server!");
