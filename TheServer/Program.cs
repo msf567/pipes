@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace TheServer
+namespace Finger
 {
     class Program
     {
@@ -18,7 +17,7 @@ namespace TheServer
                 firstProc.StartInfo.FileName = "CustomForms.exe";
                 firstProc.EnableRaisingEvents = true;
 
-                for(int x = 0; x < 20; x ++)
+                for(int x = 0; x < 5; x ++)
                 firstProc.Start();
 
             }
